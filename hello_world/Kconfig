@@ -1,4 +1,4 @@
-menuconfig HELLO_WORLD
+config HELLO_WORLD
     bool "custom hello world output"
     help
       Enable the hello world output
