@@ -1,0 +1,9 @@
+description: Microchip MCP3201 Signle Channle 12-Bit ADC.
+compatible: "microchip,mcp3201"
+include: [sensor-device.yaml, i2c-device.yaml]
+
+properties:
+  scale:
+    type: int
+    default: 1
+    description: The scale factor of the data.
