@@ -1,4 +1,5 @@
 config HELLO_WORLD
     bool "custom hello world output"
+    default y
     help
       Enable the hello world output

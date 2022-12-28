@@ -1,7 +1,7 @@
 #include "hello_world.h"
-#include <device.h>
+#include <zephyr/device.h>
 #include <zephyr/types.h>
-#include <sys/printk.h>
+#include <zephyr/sys/printk.h>
 
 static int init()
 {
@@ -9,9 +9,9 @@ static int init()
     return 0;
 }
 
-static void greet()
+static void greet(const struct device *dev)
 {
-    printk("Hell0 World\n");
+    printk("Hello World from %s\n", dev->name);
 }
 
 DEVICE_DEFINE(hello_world, "HELLO_WORLD_DRIVER",

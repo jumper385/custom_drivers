@@ -1,1 +1,2 @@
 add_subdirectory_ifdef(CONFIG_HELLO_WORLD hello_world)
+add_subdirectory_ifdef(CONFIG_MCP3201 mcp3201)

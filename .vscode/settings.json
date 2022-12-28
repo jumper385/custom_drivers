@@ -1,0 +1,7 @@
+{
+    "nrf-connect.topdir": "/Users/henrychen/Documents/embedded-projects/custom-workspace",
+    "nrf-connect.toolchain.path": "PATH",
+    "nrf-connect.applications": [
+        "."
+    ]
+}

@@ -1,3 +1,4 @@
 menu "Chenry's Driver API"
 rsource "hello_world/Kconfig"
+rsource "mcp3201/Kconfig"
 endmenu
