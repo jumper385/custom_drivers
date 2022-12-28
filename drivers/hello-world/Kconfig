@@ -1,5 +1,0 @@
-config HELLO_WORLD
-    bool "custom hello world output"
-    depends on SPI
-    help
-      Enable the hello world output. You'll need SPI for this to work.

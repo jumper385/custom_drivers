@@ -7,10 +7,10 @@ void init()
 
 void greet()
 {
-    printk("Hell0 World");
+    printk("Hell0 World\n");
 }
 
-DEVICE_DEFINE(hello_world, DT_INST_LABEL(0),
+DEVICE_DEFINE(helloworld, "HELLO_WORLD_DRIVER",
               init, NULL,
               NULL, NULL, POST_KERNEL,
-              CONFIG_SENSOR_INIT_PRIORITY, NULL);
+              CONFIG_SENSOR_INIT_PRIORITY, &((struct hello_world_driver_api){.greet = greet}));
